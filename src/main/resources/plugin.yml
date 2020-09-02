@@ -1,0 +1,11 @@
+name: Stopillegals
+version: ${project.version}
+main: doyaker.stopillegals.Stopillegals
+api-version: 1.13
+authors: [doyaker]
+description: A plugin with the goal of preventing the use to normal players of items that are unobtainable on survival vanilla, such as illegaly stacked items teor illegally enchanted items.
+website: https://github.com/doyaker/StopIllegals
+commands:
+  stopillegals:
+    usage: /stopillegals <argument>
+    description: Main command for StopIllegals plugin. Use /stopillegals help for a list of arguments.

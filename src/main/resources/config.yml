@@ -1,0 +1,19 @@
+# STOPILLEGALS CONFIG
+# You will be able to bypass the plugin with the permission 'stopillegals.bypass'
+
+IllegalItems:
+  stacks:
+    #If enabled, players won't be able to use illegally stacked items.
+    disableIllegallyStackedItems: true
+    #If enabled, the illegaly stacked object will vanish instead of reverting it to his maximum stack size (NOTE THAT THIS WILL ONLY WORK IF disableIllegallyStackedItems IS TRUE).
+    vanishIllegallyStackedItems: false
+  enchants:
+    #If enabled, players won't be able to use illegally enchanted items. (for example a sword with sharpness 6)
+    disableIllegallyEnchantedItems: true
+    #If enabled, the illegally enchanted object will vanish instead of reverting it to his maximum enchanting level (NOTE THAT THIS WILL ONLY WORK IF disableIllegallyEnchantedItems IS TRUE).
+    vanishIllegallyEnchantedItems: false
+  items:
+    #If enabled, unobtainable items in survival vanilla will be treated as illegal items.
+    #Items marked as unobtainable are: Bedrock, command block, command block minecart, jigsaw block, structure block, barrier block, structure void.
+    #In the future you will be able to add or remove items to this list.
+    disableUnobtainableItems: true
