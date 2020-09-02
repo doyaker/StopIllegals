@@ -56,8 +56,7 @@ public class CheckIllegalItems {
         illegalItems.add(Material.COMMAND_BLOCK_MINECART);
         illegalItems.add(Material.STRUCTURE_BLOCK);
         illegalItems.add(Material.STRUCTURE_VOID);
-
-
+        
         if(disableUnobtainableItems) {
             for(ItemStack item : i.getContents()){
                 if(item != null){

@@ -2,6 +2,7 @@ package doyaker.stopillegals.events;
 
 import doyaker.stopillegals.checks.CheckIllegalEnchants;
 import doyaker.stopillegals.checks.CheckIllegalItems;
+import doyaker.stopillegals.checks.CheckIllegalNBT;
 import doyaker.stopillegals.checks.CheckIllegalStacks;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -14,6 +15,7 @@ public class BlockBreakEventSI implements Listener {
         CheckIllegalStacks.checkIllegalStacks(e.getPlayer());
         CheckIllegalEnchants.checkIllegalEnchants(e.getPlayer());
         CheckIllegalItems.checkIllegalItems(e.getPlayer());
+        CheckIllegalNBT.checkIllegalNBTPlayer(e.getPlayer());
     }
 
 }

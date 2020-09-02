@@ -1,6 +1,7 @@
 package doyaker.stopillegals.checks;
 
 import doyaker.stopillegals.Stopillegals;
+import doyaker.stopillegals.logger.LoggerSI;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -26,7 +27,7 @@ public class CheckIllegalStacks {
                         }else{
                             item.setAmount(item.getMaxStackSize());
                         }
-                        Bukkit.getLogger().info("[!] "+p.getName()+" has tried to use illegaly stacked items!");
+                        LoggerSI.logToConsole(p, "X:"+p.getLocation().getX()+" Y:"+p.getLocation().getY()+" Z:"+p.getLocation().getZ());
                     }
                 }
             }

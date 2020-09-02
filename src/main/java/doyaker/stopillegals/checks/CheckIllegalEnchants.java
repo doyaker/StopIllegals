@@ -1,6 +1,7 @@
 package doyaker.stopillegals.checks;
 
 import doyaker.stopillegals.Stopillegals;
+import doyaker.stopillegals.logger.LoggerSI;
 import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
@@ -36,7 +37,7 @@ public class CheckIllegalEnchants {
                                     item.addEnchantment(e, e.getMaxLevel());
                                 }
                             }
-                            Bukkit.getLogger().info("[!] "+p.getName()+" has tried to use illegaly enchanted items!");
+                            LoggerSI.logToConsole(p, "X:"+p.getLocation().getX()+" Y:"+p.getLocation().getY()+" Z:"+p.getLocation().getZ());
                         }
                     }
                 }
